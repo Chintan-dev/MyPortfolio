@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
+
+*::selection {
+    color: var(--profile2-color);
+}
+
+:root {
+    /* --background-color: var(--moz-background-color); */
+    --background-color: fcfbff;
+    --color: 16151a;
+    --profile1-color: rgb(186 180 182);
+    --profile2-color: #b36eb1;
+}
+
+/* [darkmode] {
+    --background-color: #282c34;
+} */
