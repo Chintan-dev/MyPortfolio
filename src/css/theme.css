@@ -3,10 +3,18 @@
     padding: 0;
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
         monospace;
+    scroll-behavior: smooth;
+    text-decoration: none;
 }
 
 *::selection {
     color: var(--profile2-color);
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 :root {
@@ -17,6 +25,6 @@
     --profile2-color: #b36eb1;
 }
 
-/* [darkmode] {
+[data-theme="dark"] {
     --background-color: #282c34;
-} */
+}

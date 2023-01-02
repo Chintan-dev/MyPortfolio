@@ -1,0 +1,187 @@
+.App-header {
+    width: -webkit-fill-available;
+    position: fixed;
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 10rem;
+    font-size: calc(6px + 2vmin);
+    color: var(--color);
+    font-weight: bold;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menubar>a,
+main {
+    padding: 0 10px;
+    cursor: pointer;
+    color: var(--color);
+}
+
+section {
+    min-height: 100vh;
+}
+
+.section-Home {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+}
+
+.About,
+.Skills,
+.Servies,
+.Portfolio {
+    position: relative;
+    top: 3.5rem;
+    border-top: 1px solid #ff2ef8;
+}
+
+.social-media-icon {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-media-icon icon>a {
+    text-decoration: none;
+
+    color: var(--color);
+}
+
+.social-media-icon>icon:hover {
+    cursor: pointer;
+    color: var(--profile1-color);
+    color: var(--profile2-color);
+    transition: 0.2s;
+}
+
+.Intro {
+    width: 26rem;
+    /* padding: 2rem; */
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.Intro>button {
+    width: fit-content;
+    padding: 12px;
+    margin-top: 1rem;
+    font-size: large;
+    font-family: system-ui;
+    border-radius: 10px;
+    background: var(--profile1-color);
+    color: var(--color);
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.Intro>button:hover {
+    background-color: rgba(141, 73, 205, 0.734);
+    background-color: #b36eb1;
+}
+
+.my-pic {
+    width: 430px;
+    height: 430px;
+    overflow: hidden;
+    background-color: var(--profile1-color);
+    border-radius: 32% 68% 70% 30% / 73% 51% 49% 27%;
+    border-radius: 32% 68% 70% 30% / 73% 51% 49% 27%;
+}
+
+.scroll-down {
+    position: absolute;
+    bottom: 7rem;
+    padding-left: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.20s;
+}
+
+.scroll-down:hover {
+    position: absolute;
+    bottom: 6.5rem;
+}
+
+.scroll-down::before {
+    content: "";
+    position: absolute;
+    bottom: -0.7rem;
+    left: 0px;
+    width: 20px;
+    height: 35px;
+    border: var(--profile1-color) solid;
+    border-radius: 1rem;
+}
+
+.scroll-down::after {
+    content: '';
+    position: absolute;
+    top: 0rem;
+    left: 0.6rem;
+    width: 0.3rem;
+    height: 0.6rem;
+    border-radius: 1rem;
+    transition: 0.20s;
+    animation: move infinite 2s linear;
+    background-color: var(--profile1-color);
+}
+
+@keyframes move {
+    0% {
+        top: 0rem;
+    }
+
+    50% {
+        top: 0.3rem;
+    }
+
+    100% {
+        top: 0rem;
+    }
+}
+
+.Intro>h5 {
+    font-size: x-large;
+}
+
+.Intro>p {
+    font-family: system-ui;
+}
+
+.Intro>h1 {
+    font-size: xxx-large;
+    font-family: system-ui;
+}
+
+.svg {
+    width: 3rem;
+}
+
+.skills-box-1 {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
