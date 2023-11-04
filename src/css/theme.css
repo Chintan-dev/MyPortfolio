@@ -1,30 +1,30 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-        monospace;
-    scroll-behavior: smooth;
-    text-decoration: none;
+  margin: 0;
+  padding: 0;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+  scroll-behavior: smooth;
+  text-decoration: none;
 }
 
 *::selection {
-    color: var(--profile2-color);
+  color: var(--profile2-color);
 }
 
 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 :root {
-    /* --background-color: var(--moz-background-color); */
-    --background-color: fcfbff;
-    --color: 16151a;
-    --profile1-color: rgb(186 180 182);
-    --profile2-color: #b36eb1;
+  /* --background-color: var(--moz-background-color); */
+  --background-color: #fff;
+  --color: 16151a;
+  --profile1-color: rgb(186 180 182);
+  --profile2-color: #b36eb1;
 }
 
 [data-theme="dark"] {
-    --background-color: #282c34;
+  --background-color: #282c34;
 }
